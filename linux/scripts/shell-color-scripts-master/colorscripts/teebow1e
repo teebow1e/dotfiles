@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+# Author: HostGrady
+# Font used: https://patorjk.com/software/taag/#p=display&f=Cricket&t=suckless
+
+
+if [ -x "$(command -v tput)" ]; then
+    bold="$(tput bold)"
+    blue="$(tput setaf 4)" 
+    cyan="$(tput setaf 6)"  
+    reset="$(tput sgr0)"
+fi
+
+art="${bold}${blue}                                         
+  __               __                   __       
+ |  |_.-----.-----|  |--.-----.--.--.--|__.-----.
+ |   _|  -__|  -__|  _  |  _  |  |  |  |  |  -__|
+ |____|_____|_____|_____|_____|________|__|_____|
+
+${reset}${cyan}       certified noob, overthinking ctf-er${reset}            
+ "
+
+
+echo "$art"
